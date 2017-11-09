@@ -1,0 +1,9 @@
+<h3>公共导航组件</h3>
+<span>{{item}}</span>
+<nav>
+	<ul>
+		<li *ngFor="let item of nav">
+			<a [routerLink]=[item.url]>{{item.name}}</a>
+		</li>
+	</ul>
+</nav>
